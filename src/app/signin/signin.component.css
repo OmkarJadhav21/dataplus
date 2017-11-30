@@ -10,9 +10,8 @@
 .col-md-8{
     max-width: 67.37%;
 }
-img{
-    max-height: 150px;
-    max-width: 150px;
-    height: 150px;
-    width: 150px;
+.square{
+    border: 1px solid black;
+    height: 140px;
+    width: 120px;
 }
