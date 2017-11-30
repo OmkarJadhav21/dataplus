@@ -1,0 +1,12 @@
+.brd{
+    border: 1px solid black;
+    font-size: 13px;
+}
+.scrsize{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.col-md-8{
+    max-width: 67.37%;
+}
