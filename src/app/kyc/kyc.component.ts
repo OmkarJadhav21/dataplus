@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-kyc',
@@ -11,5 +12,7 @@ export class KycComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  kyc(kycForm: NgForm) {
+    console.log(kycForm.value);
+  }
 }

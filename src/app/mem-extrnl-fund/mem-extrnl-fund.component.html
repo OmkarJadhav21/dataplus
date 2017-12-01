@@ -1,3 +1,109 @@
-<p>
-  mem-extrnl-fund works!
-</p>
+<div style="background-color: #F0F0F0;">
+  <h1 style="text-align:center">EXTERNAL INSTITUTIONS FUNDING</h1>
+  <div class="scrsize">
+    <br>
+    <form #extFundForm="ngForm" (ngSubmit)="extFund(extFundForm)">
+      <div style="text-align:right">
+        <label>Date</label>
+        <input type="date" name="Date" ngModel>
+      </div>
+
+      <div class="brd row">
+        <div class="col-md-11">
+          <br>
+          <div>
+            <label class="col-md-3">Agency/Parties Name</label>
+            <input class="col-md-8" type="text"name="partyName" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3"> Address</label>
+            <input class="col-md-8" type="text"name="partyAddress" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">City</label>
+            <input class="col-md-3" type="text"name="pcity" ngModel>
+            <label class="col-md-1">State</label>
+            <input class="col-md-2" type="text"name="pstate" ngModel>
+            <label class="col-md-1" style="margin-left:-8px;">Country</label>
+            <input class="col-md-1" type="text"name="pcountry" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Gov. Scheme</label>
+            <input class="col-md-8" type="text"name="govScheme" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Total Funds Received</label>
+            <input class="col-md-3" type="text"name="fundReceived" ngModel>
+            <label class="col-md-2">Funds Pending</label>
+            <input class="col-md-3" type="text"name="fundPending" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Scheme Code</label>
+            <input class="col-md-3" type="text"name="schemeCode" ngModel>
+            <label class="col-md-2">GR No</label>
+            <input class="col-md-3" type="text"name="grNo" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Account No</label>
+            <input class="col-md-3" type="text"name="accountNo" ngModel>
+            <label class="col-md-2">Purpose</label>
+            <input class="col-md-3" type="text"name="purpose" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Other Information</label>
+            <input type="text"name="otherInfo" ngModel class="col-md-8">
+          </div>
+          <br>
+        </div>
+      </div>
+      <br>
+
+      <div class="brd row">
+        <div class="col-md-12">
+          <br>
+          <div>
+            <label class="col-md-3">Scheme Name</label>
+            <input class="col-md-3" type="text"name="schemeName" ngModel>
+            <label class="col-md-3">Qualification</label>
+            <input class="col-md-2" type="text"name="qulaification" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Central Gov/PSU</label>
+            <input class="col-md-3" type="text"name="centralGov" ngModel>
+            <label class="col-md-3">Department</label>
+            <input class="col-md-2" type="text"name="department" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Line of Business</label>
+            <input class="col-md-3" type="text"name="lineofBusiness" ngModel>
+            <label class="col-md-3">Funding Type</label>
+            <input class="col-md-2" type="text"name="fundingType" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Loan Approval Limit</label>
+            <input class="col-md-3" type="text"name="loanApprovlLimit" ngModel>
+            <label class="col-md-3">Recovery Period</label>
+            <input class="col-md-2" type="text"name="recoveryPeriod" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Rate of Interest</label>
+            <input class="col-md-3" type="text"name="rateofIntrest" ngModel>
+            <label class="col-md-3">Subsidy Amount %</label>
+            <input class="col-md-2" type="text"name="subsidyAmount" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Location</label>
+            <input class="col-md-3" type="text"name="location" ngModel>
+            <label class="col-md-3">Collection Schedule</label>
+            <input class="col-md-2" type="text"name="collectionSched" ngModel>
+          </div>
+          <br>
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <input type="submit" class="btn btn-primary" value="Submit">
+      </div>
+    </form>
+  </div>
+</div>

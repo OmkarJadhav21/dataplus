@@ -1,3 +1,156 @@
-<p>
-  kyc works!
-</p>
+<div style="background-color: #F0F0F0;">
+  <h1 style="text-align:center">CUSTOMER INFORMATION</h1>
+  <div class="scrsize">
+    <br>
+    <form #kycForm="ngForm" (ngSubmit)="kyc(kycForm)">
+      <div style="text-align:right">
+        <label>Date</label>
+        <input type="date" name="date" ngModel>
+      </div>
+
+      <div class="brd row">
+        <div class="col-md-12">
+          <br>
+          <div>
+            <label class="col-md-3">Member Name</label>
+            <input class="col-md-8" type="text" name="memberName" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Current Address</label>
+            <input class="col-md-8" type="text" name="cAddress" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">City</label>
+            <input class="col-md-3" type="text" name="city" ngModel>
+            <label class="col-md-1">State</label>
+            <input class="col-md-2" type="text" name="state" ngModel>
+            <label class="col-md-1" style="margin-left:-8px;">Country</label>
+            <input class="col-md-1" type="text" name="country" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Permanent Address</label>
+            <input class="col-md-8" type="text" name="pAddress" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">City</label>
+            <input class="col-md-3" type="text" name="pcity" ngModel>
+            <label class="col-md-1">State</label>
+            <input class="col-md-2" type="text" name="pstate" ngModel>
+            <label class="col-md-1" style="margin-left:-8px;">Country</label>
+            <input class="col-md-1" type="text" name="pcountry" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Mobile No</label>
+            <input class="col-md-3" type="text" name="mobileNo" ngModel>
+            <label class="col-md-2">Voter ID</label>
+            <input class="col-md-3" type="text" name="voterid" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Telephone No</label>
+            <input class="col-md-3" type="text" name="telephoneNo" ngModel>
+            <label class="col-md-2">Aadhar No</label>
+            <input class="col-md-3" type="text" name="aadharNo" ngModel>
+          </div>
+          <br>
+        </div>
+      </div>
+      <br>
+      <div class="brd row">
+        <div class="col-md-12">
+          <br>
+          <div>
+            <label class="col-md-3">Member No.</label>
+            <input class="col-md-3" type="text" name="memberNo" ngModel>
+            <label class="col-md-3">Active Status</label>
+            <input class="col-md-2" type="text" name="activeStatus" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Loan Amount</label>
+            <input class="col-md-3" type="text" name="loanAmount" ngModel>
+            <label class="col-md-3">Group</label>
+            <input class="col-md-2" type="text" name="group" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Sanction Amount</label>
+            <input class="col-md-3" type="text" name="sanctionAmount" ngModel>
+            <label class="col-md-3">Branch</label>
+            <input class="col-md-2" type="text" name="branch" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Balence Amount</label>
+            <input class="col-md-3" type="text" name="balenceAmount" ngModel>
+            <label class="col-md-3">Center</label>
+            <input class="col-md-2" type="text" name="center" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">FDO</label>
+            <input class="col-md-3" type="text" name="fdo" ngModel>
+            <label class="col-md-3">EMI Schedule</label>
+            <input class="col-md-2" type="text" name="emiSchedule" ngModel>
+          </div>
+          <br>
+        </div>
+      </div>
+      <br>
+
+      <div class="brd row" style="border-bottom:none;">
+        <div style="text-align:center;width:100%;margin-top:1%">
+          <b>Saving Account Details</b>
+        </div>
+        <div class="col-md-12">
+          <br>
+          <div>
+            <label class="col-md-3">Account Holder Name</label>
+            <input class="col-md-3" type="text" name="holderName" ngModel>
+            <label class="col-md-3">Branch</label>
+            <input class="col-md-2" type="text" name="branch" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Bank Name</label>
+            <input class="col-md-3" type="text" name="bankName" ngModel>
+            <label class="col-md-3">IFSC CODE</label>
+            <input class="col-md-2" type="text" name="ifsc" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Saving A/C No.</label>
+            <input class="col-md-3" type="text" name="accountNo" ngModel>
+            <label class="col-md-3">City</label>
+            <input class="col-md-2" type="text" name="bcity" ngModel>
+          </div>
+          <br>
+        </div>
+      </div>
+      <div class="brd row">
+        <div style="text-align:center;width:100%;margin-top:1%">
+          <b>Other Loan Details</b>
+        </div>
+        <div class="col-md-12">
+          <br>
+          <div>
+            <label class="col-md-3">Bank Name</label>
+            <input class="col-md-3" type="text" name="oBankName" ngModel>
+            <label class="col-md-3">Loan A/c No.</label>
+            <input class="col-md-2" type="text" name="loanNo" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Loan Value</label>
+            <input class="col-md-3" type="text" name="loanValue" ngModel>
+            <label class="col-md-3">Loan Tenure</label>
+            <input class="col-md-2" type="text" name="loanTenure" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">EMI Amount</label>
+            <input class="col-md-3" type="text" name="emiAmount" ngModel>
+            <label class="col-md-3">EMI Schedule</label>
+            <input class="col-md-2" type="text" name="emiSchedule" ngModel>
+          </div>
+          <br>
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <input type="submit" class="btn btn-primary" value="Submit">
+      </div>
+    </form>
+  </div>
+</div>

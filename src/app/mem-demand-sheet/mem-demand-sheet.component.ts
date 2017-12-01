@@ -1,3 +1,4 @@
+import { NgForm } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,5 +12,7 @@ export class MemDemandSheetComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  demandsheet(demandForm: NgForm) {
+    console.log(demandForm.value);
+  }
 }

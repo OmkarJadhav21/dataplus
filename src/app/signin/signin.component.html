@@ -1,142 +1,158 @@
-<div class="scrsize"><br>
-  <form>   
-    <div style="text-align:right"> 
-    <label >Date</label>
-    <input type="date">
-  </div> 
+<div style="background-color: #F0F0F0;">
+    <h1 style="text-align:center">USER CREATION</h1>
+    <div class="scrsize">
+        <br>
+        <form #signinForm="ngForm" (ngSubmit)="signin(signinForm)">
+            <div style="text-align:right">
+                <label>Date</label>
+                <input type="date" name="date" ngModel>
+            </div>
 
-  <div class="brd row">
-    <div class="col-md-10" ><br>
-      <div>
-        <label class="col-md-3">Employee Name</label>
-        <input class="col-md-8"type="text">
-      </div>
-      <div>
-        <label class="col-md-3">Current Address</label>
-        <input class="col-md-8"type="text">
-      </div>
-      <div>
-          <label class="col-md-3">City</label>
-          <input class="col-md-3"type="text">
-          <label class="col-md-1" >State</label>
-          <input class="col-md-2"type="text">
-          <label  class="col-md-1" style="margin-left:-8px;">Country</label>
-          <input class="col-md-1" type="text">
-      </div>
-      <div>
-        <label class="col-md-3">Permanent Address</label>
-        <input class="col-md-8"type="text">
-      </div>
-      <div>
-          <label class="col-md-3">City</label>
-          <input class="col-md-3"type="text">
-          <label class="col-md-1" >State</label>
-          <input class="col-md-2"type="text">
-          <label class="col-md-1" style="margin-left:-8px;">Country</label>
-          <input class="col-md-1" type="text">
-      </div>
-      <div>
-          <label class="col-md-3">Employee Code</label>
-          <input class="col-md-3"type="text">
-          <label class="col-md-2" >Email Id</label>
-          <input class="col-md-3"type="text">
-      </div>
-      <div>
-          <label class="col-md-3">Mobile No</label>
-          <input class="col-md-3"type="text">
-          <label class="col-md-2" >Telephone No</label>
-          <input class="col-md-3"type="text">
-      </div>
-      <div>
-          <label class="col-md-3">Aadhar No</label>
-          <input class="col-md-3"type="text">
-          <label class="col-md-2" >PAN No</label>
-          <input class="col-md-3"type="text">
-      </div>
-      <div>
-          <label class="col-md-3">Emp-Grade</label>
-          <input class="col-md-3"type="text">
-          <label class="col-md-2" >Designation</label>
-          <input class="col-md-3"type="text">
-      </div>
-      <div>
-          <label class="col-md-3">Branch</label>
-          <input class="col-md-3"type="text">
-          <label class="col-md-2" >Reporting Manager</label>
-          <input class="col-md-3"type="text">
-      </div>
-      <div>
-          <label class="col-md-3">Area Code</label>
-          <input class="col-md-3"type="text">
-          <label class="col-md-2" >Area Assigned</label>
-          <input class="col-md-3"type="text">
-      </div><br>
+            <div class="brd row">
+                <div class="col-md-10">
+                    <br>
+                    <div>
+                        <label class="col-md-3">Employee Name</label>
+                        <input class="col-md-8" type="text" name="employeeName" ngModel>
+                    </div>
+                    <div>
+                        <label class="col-md-3">Current Address</label>
+                        <input class="col-md-8" type="text" name="currentAddress" ngModel>
+                    </div>
+                    <div>
+                        <label class="col-md-3">City</label>
+                        <input class="col-md-3" type="text" name="city" ngModel>
+                        <label class="col-md-1">State</label>
+                        <input class="col-md-2" type="text" name="state" ngModel>
+                        <label class="col-md-1" style="margin-left:-8px;">Country</label>
+                        <input class="col-md-1" type="text" name="country" ngModel>
+                    </div>
+                    <div>
+                        <label class="col-md-3">Permanent Address</label>
+                        <input class="col-md-8" type="text" name="permanentAddress" ngModel>
+                    </div>
+                    <div>
+                        <label class="col-md-3">City</label>
+                        <input class="col-md-3" type="text" name="city" ngModel>
+                        <label class="col-md-1">State</label>
+                        <input class="col-md-2" type="text" name="state" ngModel>
+                        <label class="col-md-1" style="margin-left:-8px;">Country</label>
+                        <input class="col-md-1" type="text" name="country" ngModel>
+                    </div>
+                    <div>
+                        <label class="col-md-3">Employee Code</label>
+                        <input class="col-md-3" type="text" name="employeeCode" ngModel>
+                        <label class="col-md-2">Email Id</label>
+                        <input class="col-md-3" type="text" name="emailID" ngModel>
+                    </div>
+                    <div>
+                        <label class="col-md-3">Mobile No</label>
+                        <input class="col-md-3" type="text" name="mobileNo" ngModel>
+                        <label class="col-md-2">Telephone No</label>
+                        <input class="col-md-3" type="text" name="telephoneNo" ngModel>
+                    </div>
+                    <div>
+                        <label class="col-md-3">Aadhar No</label>
+                        <input class="col-md-3" type="text" name="aadharNo" ngModel>
+                        <label class="col-md-2">PAN No</label>
+                        <input class="col-md-3" type="text" name="panNo" ngModel>
+                    </div>
+                    <div>
+                        <label class="col-md-3">Emp-Grade</label>
+                        <input class="col-md-3" type="text" name="empGrade" ngModel>
+                        <label class="col-md-2">Designation</label>
+                        <input class="col-md-3" type="text" name="designation" ngModel>
+                    </div>
+                    <div>
+                        <label class="col-md-3">Branch</label>
+                        <input class="col-md-3" type="text" name="branch" ngModel>
+                        <label class="col-md-2">Reporting Manager</label>
+                        <input class="col-md-3" type="text" name="reportingManager" ngModel>
+                    </div>
+                    <div>
+                        <label class="col-md-3">Area Code</label>
+                        <input class="col-md-3" type="text" name="areaCode" ngModel>
+                        <label class="col-md-2">Area Assigned</label>
+                        <input class="col-md-3" type="text" name="areaAssigned" ngModel>
+                    </div>
+                    <br>
+                </div>
+                <div class="col-md-2">
+                    <p style="text-align:center">
+                        <b>Photo</b>
+                    </p>
+                    <input type="text" name="image" ngModel placeholder="Temp Image path">
+                    <div class="square"></div>
+                </div>
+            </div>
+            <br>
+            <div class="row brd">
+                <div class="col-md-12">
+                    <br>
+                    <label class="col-md-2">PG Percentage</label>
+                    <input class="col-md-3" type="text" name="pgPercentage" ngModel>
+                    <label class="col-md-2">Total Work Experience</label>
+                    <input class="col-md-3" type="text" name="totalworkExp" ngModel>
+                </div>
+                <div class="col-md-12">
+                    <label class="col-md-2">Graduation Percentage</label>
+                    <input class="col-md-3" type="text" name="graduationPercentage" ngModel>
+                    <label class="col-md-2">Experience in NBFC</label>
+                    <input class="col-md-3" type="text" name="workExpInNBFC" ngModel>
+                </div>
+                <div class="col-md-12">
+                    <label class="col-md-2">10+2 Grade/Percentage</label>
+                    <input class="col-md-3" type="text" name="twelthPercentage" ngModel>
+                    <label class="col-md-2">Date of Birth</label>
+                    <input class="col-md-3" type="text" name="dateOfBirth" ngModel>
+                </div>
+                <div class="col-md-12">
+                    <label class="col-md-2">10 Grade/Percentage</label>
+                    <input class="col-md-3" type="text" name="tenthPercentage" ngModel>
+                    <label class="col-md-2">Spouse Name</label>
+                    <input class="col-md-3" type="text" name="spouseName" ngModel>
+                </div>
+                <div class="col-md-12">
+                    <label class="col-md-2">Diploma</label>
+                    <input class="col-md-3" type="text" name="diploma" ngModel>
+                    <label class="col-md-2">Anniversary Date</label>
+                    <input class="col-md-3" type="text" name="anniversaryDate" ngModel>
+                </div>
+                <div class="col-md-12">
+                    <label class="col-md-2">Computer/Other</label>
+                    <input class="col-md-3" type="text" name="computerOrOther" ngModel>
+                    <label class="col-md-2">No. of Children's</label>
+                    <input class="col-md-3" type="text" name="numberOfChildrens" ngModel>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="row brd">
+                <div class="col-md-12">
+                    <br>
+                    <label class="col-md-2">BIO Identify</label>
+                    <input class="col-md-3" type="text" name="bioIdentity" ngModel>
+                    <label class="col-md-2">Male/Female</label>
+                    <input class="col-md-3" type="text" name="gender" ngModel>
+                </div>
+                <div class="col-md-12">
+                    <label class="col-md-2">Height</label>
+                    <input class="col-md-3" type="text" name="hight" ngModel>
+                    <label class="col-md-2">Weight</label>
+                    <input class="col-md-3" type="text" name="weight" ngModel>
+                </div>
+                <div class="col-md-12">
+                    <label class="col-md-2">Physical Handicap</label>
+                    <input class="col-md-3" type="text" name="physicalHandicap" ngModel>
+                    <label class="col-md-2">If Yes.Description</label>
+                    <input class="col-md-3" type="text" name="ifYesDescription" ngModel>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <input type="submit" class="btn btn-primary" value="Submit">
+            </div>
+        </form>
     </div>
-    <div class="col-md-2">
-      <p style="text-align:center"><b>Photo</b> </p>
-      <div class="square"></div>
-    </div>
-    </div>
-         <br>
-    <div class="row brd">
-      <div class="col-md-12"><br>
-          <label class="col-md-2">PG Percentage</label>
-          <input class="col-md-3"type="text">
-          <label class="col-md-2" >Total Work Experience</label>
-          <input class="col-md-3"type="text">
-      </div>
-      <div class="col-md-12">
-          <label class="col-md-2">Graduation Percentage</label>
-          <input class="col-md-3"type="text">
-          <label class="col-md-2" >Experience in NBFC</label>
-          <input class="col-md-3"type="text">
-      </div>
-      <div class="col-md-12">
-          <label class="col-md-2">10+2 Grade/Percentage</label>
-          <input class="col-md-3"type="text">
-          <label class="col-md-2" >Date of Birth</label>
-          <input class="col-md-3"type="text">
-      </div>
-      <div class="col-md-12">
-          <label class="col-md-2">10 Grade/Percentage</label>
-          <input class="col-md-3"type="text">
-          <label class="col-md-2" >Spouse Name</label>
-          <input class="col-md-3"type="text">
-      </div>
-      <div class="col-md-12">
-          <label class="col-md-2">Diploma</label>
-          <input class="col-md-3"type="text">
-          <label class="col-md-2" >Anniversary Date</label>
-          <input class="col-md-3"type="text">
-      </div>
-      <div class="col-md-12">
-          <label class="col-md-2">Computer/Other</label>
-          <input class="col-md-3"type="text">
-          <label class="col-md-2" >No. of Children's</label>
-          <input class="col-md-3"type="text">
-      </div><br>
-    </div><br>
-    <div class="row brd">
-      <div class="col-md-12"><br>
-          <label class="col-md-2">BIO Identify</label>
-          <input class="col-md-3"type="text">
-          <label class="col-md-2" >Male/Female</label>
-          <input class="col-md-3"type="text">
-      </div>
-      <div class="col-md-12">
-          <label class="col-md-2">Height</label>
-          <input class="col-md-3"type="text">
-          <label class="col-md-2" >Weight</label>
-          <input class="col-md-3"type="text">
-      </div>
-      <div class="col-md-12">
-          <label class="col-md-2">Physical Handicap</label>
-          <input class="col-md-3"type="text">
-          <label class="col-md-2" >If Yes.Description</label>
-          <input class="col-md-3"type="text">
-      </div><br>
-    </div><br>
-    <div style="text-align:center"> <input type="button" class="btn btn-primary" value="Submit">
-</div>
-  </form>
 </div>

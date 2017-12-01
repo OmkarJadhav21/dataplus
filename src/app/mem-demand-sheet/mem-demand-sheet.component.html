@@ -1,3 +1,112 @@
-<p>
-  mem-demand-sheet works!
-</p>
+<div style="background-color: #F0F0F0;">
+  <h1 style="text-align:center">DEMAND SHEET</h1>
+  <div class="scrsize">
+    <br>
+    <form #demandForm="ngForm" (ngSubmit)="demandsheet(demandForm)">
+      <div style="text-align:right">
+        <label>Date</label>
+        <input type="date" name="Date"ngModel>
+      </div>
+
+      <div class="brd row">
+        <div class="col-md-11">
+          <br>
+          <div>
+            <label class="col-md-3">FDO EMP Code</label>
+            <input class="col-md-2" type="text" name="fdoCode" ngModel>
+            <label class="col-md-3">Branch</label>
+            <input class="col-md-3" type="text" name="fBranch" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">City</label>
+            <input class="col-md-3" type="text" name="fcity" ngModel>
+            <label class="col-md-1">State</label>
+            <input class="col-md-2" type="text" name="fstate" ngModel>
+            <label class="col-md-1" style="margin-left:-8px;">Country</label>
+            <input class="col-md-1" type="text" name="fcountry" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3"> Area</label>
+            <input class="col-md-8" type="text" name="area" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Group</label>
+            <input class="col-md-3" type="text" name="group1" ngModel>
+            <label class="col-md-2">Members</label>
+            <input class="col-md-3" type="text" name="members1" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Mobile No.</label>
+            <input class="col-md-3" type="text" name="mobileNo" ngModel>
+            <label class="col-md-2">Telephone No</label>
+            <input class="col-md-3" type="text" name="telephoneNo" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">PAN No</label>
+            <input class="col-md-3" type="text" name="panNo" ngModel>
+            <label class="col-md-2">Aadhar No</label>
+            <input class="col-md-3" type="text" name="aadharNo" ngModel>
+          </div>
+          <br>
+        </div>
+      </div>
+      <br>
+      <div class="brd row">
+        <div class="col-md-12">
+          <br>
+          <div>
+            <label class="col-md-3">No of Visit</label>
+            <input class="col-md-3" type="text" name="noofVisit" ngModel>
+            <label class="col-md-3">Amount Collected</label>
+            <input class="col-md-2" type="text" name="amountCollected" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Amount Due</label>
+            <input class="col-md-3" type="text" name="amountDue" ngModel>
+            <label class="col-md-3">No of Members Due</label>
+            <input class="col-md-2" type="text" name="memberDue" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Group</label>
+            <input class="col-md-3" type="text" name="group2" ngModel>
+            <label class="col-md-3">Active Members</label>
+            <input class="col-md-2" type="text" name="activeMember" ngModel>
+          </div>
+          <br>
+        </div>
+      </div>
+      <br>
+      <div class="brd row">
+        <div class="col-md-12">
+          <div style="text-align:center">
+            <b> Member Wise Daily Collection</b>
+          </div>
+          <br>
+          <div>
+            <label class="col-md-3"> Member No</label>
+            <input class="col-md-3" type="text" name="memberNo" ngModel>
+            <label class="col-md-3">Group</label>
+            <input class="col-md-2" type="text" name="group3" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Active Status</label>
+            <input class="col-md-3" type="text" name="activeStatus" ngModel>
+            <label class="col-md-3">Activation Fees</label>
+            <input class="col-md-2" type="text" name="activationFees" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">EMI Colleted</label>
+            <input class="col-md-3" type="text" name="emiCollected" ngModel>
+            <label class="col-md-3">EMI Schedule</label>
+            <input class="col-md-2" type="text" name="emiSchedule" ngModel>
+          </div>
+          <br>
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <input type="submit" class="btn btn-primary" value="Submit">
+      </div>
+    </form>
+  </div>
+</div>

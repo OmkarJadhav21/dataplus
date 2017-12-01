@@ -11,5 +11,7 @@ export class MemberRegistrComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  memberRegistration(memRegisterForm) {
+    console.log(memRegisterForm.value);
+  }
 }

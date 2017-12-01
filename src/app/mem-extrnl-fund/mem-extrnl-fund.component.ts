@@ -1,3 +1,4 @@
+import { NgForm } from '@angular/forms/src/directives/ng_form';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,5 +12,7 @@ export class MemExtrnlFundComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  extFund(extFundForm: NgForm) {
+    console.log(extFundForm.value);
+  }
 }

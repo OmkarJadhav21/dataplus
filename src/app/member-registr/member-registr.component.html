@@ -1,3 +1,100 @@
-<p>
-  member-registr works!
-</p>
+<div style="background-color: #F0F0F0;">
+  <h1 style="text-align:center">MEMBER REGISTRATION</h1>
+  <div class="scrsize">
+    <br>
+    <form #memRegisterForm="ngForm" (ngSubmit)="memberRegistration(memRegisterForm)">
+      <div style="text-align:right">
+        <label>Date</label>
+        <input type="date"name="date"ngModel>
+      </div>
+
+      <div class="brd row">
+        <div class="col-md-11">
+          <br>
+          <div>
+            <label class="col-md-3">Member Name</label>
+            <input class="col-md-8" type="text" name="memName" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Current Address</label>
+            <input class="col-md-8" type="text" name="crntAddress" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">City</label>
+            <input class="col-md-3" type="text" name="mrCity" ngModel>
+            <label class="col-md-1">State</label>
+            <input class="col-md-2" type="text" name="mrState" ngModel>
+            <label class="col-md-1" style="margin-left:-8px;">Country</label>
+            <input class="col-md-1" type="text" name="mrCountry" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Permanent Address</label>
+            <input class="col-md-8" type="text" name="pAddress" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">City</label>
+            <input class="col-md-3" type="text" name="pCity" ngModel>
+            <label class="col-md-1">State</label>
+            <input class="col-md-2" type="text" name="pCity" ngModel>
+            <label class="col-md-1" style="margin-left:-8px;">Country</label>
+            <input class="col-md-1" type="text" name="pCountry" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Mobile No</label>
+            <input class="col-md-3" type="text" name="moNo" ngModel>
+            <label class="col-md-2">PAN No</label>
+            <input class="col-md-3" type="text" name="panNo" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Telephone No</label>
+            <input class="col-md-3" type="text" name="telNo" ngModel>
+            <label class="col-md-2">Aadhar No</label>
+            <input class="col-md-3" type="text" name="adrNo" ngModel>
+          </div>
+          <br>
+        </div>
+      </div>
+      <br>
+      <div class="brd row">
+        <div class="col-md-12">
+          <br>
+          <div>
+            <label class="col-md-3">Member No</label>
+            <input class="col-md-3" type="text" name="memNo" ngModel>
+            <label class="col-md-3">Member Registration Fees</label>
+            <input class="col-md-2" type="text" name="mrFees" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Active Status</label>
+            <input class="col-md-3" type="text" name="actStauts" ngModel>
+            <label class="col-md-3">Group</label>
+            <input class="col-md-2" type="text" name="Group1" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Document Verification</label>
+            <input class="col-md-3" type="text" name="docVerify" ngModel>
+            <label class="col-md-3">Special Comments</label>
+            <input class="col-md-2" type="text" name="speComments" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Branch Manager Approval</label>
+            <input class="col-md-3" type="text" name="bApproval" ngModel>
+            <label class="col-md-3">Area Manager Approval</label>
+            <input class="col-md-2" type="text" name="areaMApproval" ngModel>
+          </div>
+          <div>
+            <label class="col-md-3">Branch</label>
+            <input class="col-md-3" type="text" name="branch" ngModel>
+            <label class="col-md-3">FDO Code</label>
+            <input class="col-md-2" type="text" name="fdoCode" ngModel>
+          </div>
+          <br>
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <input type="submit" class="btn btn-primary" value="Submit">
+      </div>
+    </form>
+  </div>
+</div>

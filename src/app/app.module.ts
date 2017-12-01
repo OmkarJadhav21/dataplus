@@ -12,6 +12,9 @@ import { MemberRegistrComponent } from './member-registr/member-registr.componen
 import { MemLoanAccComponent } from './mem-loan-acc/mem-loan-acc.component';
 import { MemExtrnlFundComponent } from './mem-extrnl-fund/mem-extrnl-fund.component';
 import { MemDemandSheetComponent } from './mem-demand-sheet/mem-demand-sheet.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SigninService } from './All Services/signin.service';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -24,14 +27,17 @@ import { MemDemandSheetComponent } from './mem-demand-sheet/mem-demand-sheet.com
     MemberRegistrComponent,
     MemLoanAccComponent,
     MemExtrnlFundComponent,
-    MemDemandSheetComponent
+    MemDemandSheetComponent,
+    NavbarComponent,
+    
   ],
   imports: [
     BrowserModule,
     MyRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [SigninService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
