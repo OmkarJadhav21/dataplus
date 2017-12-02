@@ -5,7 +5,7 @@
     <form #demandForm="ngForm" (ngSubmit)="demandsheet(demandForm)">
       <div style="text-align:right">
         <label>Date</label>
-        <input type="date" name="Date"ngModel>
+        <input type="date" name="date" ngModel>
       </div>
 
       <div class="brd row">
@@ -13,17 +13,17 @@
           <br>
           <div>
             <label class="col-md-3">FDO EMP Code</label>
-            <input class="col-md-2" type="text" name="fdoCode" ngModel>
+            <input class="col-md-2" type="text" name="fDOEMPCode" ngModel>
             <label class="col-md-3">Branch</label>
-            <input class="col-md-3" type="text" name="fBranch" ngModel>
+            <input class="col-md-3" type="text" name="branch" ngModel>
           </div>
           <div>
             <label class="col-md-3">City</label>
-            <input class="col-md-3" type="text" name="fcity" ngModel>
+            <input class="col-md-3" type="text" name="city" ngModel>
             <label class="col-md-1">State</label>
-            <input class="col-md-2" type="text" name="fstate" ngModel>
+            <input class="col-md-2" type="text" name="state" ngModel>
             <label class="col-md-1" style="margin-left:-8px;">Country</label>
-            <input class="col-md-1" type="text" name="fcountry" ngModel>
+            <input class="col-md-1" type="text" name="country" ngModel>
           </div>
           <div>
             <label class="col-md-3"> Area</label>
@@ -33,7 +33,7 @@
             <label class="col-md-3">Group</label>
             <input class="col-md-3" type="text" name="group1" ngModel>
             <label class="col-md-2">Members</label>
-            <input class="col-md-3" type="text" name="members1" ngModel>
+            <input class="col-md-3" type="text" name="members" ngModel>
           </div>
           <div>
             <label class="col-md-3">Mobile No.</label>
@@ -43,7 +43,7 @@
           </div>
           <div>
             <label class="col-md-3">PAN No</label>
-            <input class="col-md-3" type="text" name="panNo" ngModel>
+            <input class="col-md-3" type="text" name="pANNo" ngModel>
             <label class="col-md-2">Aadhar No</label>
             <input class="col-md-3" type="text" name="aadharNo" ngModel>
           </div>
@@ -64,13 +64,13 @@
             <label class="col-md-3">Amount Due</label>
             <input class="col-md-3" type="text" name="amountDue" ngModel>
             <label class="col-md-3">No of Members Due</label>
-            <input class="col-md-2" type="text" name="memberDue" ngModel>
+            <input class="col-md-2" type="text" name="noofMembersDue" ngModel>
           </div>
           <div>
             <label class="col-md-3">Group</label>
             <input class="col-md-3" type="text" name="group2" ngModel>
             <label class="col-md-3">Active Members</label>
-            <input class="col-md-2" type="text" name="activeMember" ngModel>
+            <input class="col-md-2" type="text" name="activeMembers" ngModel>
           </div>
           <br>
         </div>
@@ -96,9 +96,9 @@
           </div>
           <div>
             <label class="col-md-3">EMI Colleted</label>
-            <input class="col-md-3" type="text" name="emiCollected" ngModel>
+            <input class="col-md-3" type="text" name="eMICollected" ngModel>
             <label class="col-md-3">EMI Schedule</label>
-            <input class="col-md-2" type="text" name="emiSchedule" ngModel>
+            <input class="col-md-2" type="text" name="eMISchedule" ngModel>
           </div>
           <br>
         </div>

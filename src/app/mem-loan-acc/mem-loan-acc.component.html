@@ -5,7 +5,7 @@
     <form #loanForm="ngForm" (ngSubmit)="loanAccount(loanForm)">
       <div style="text-align:right">
         <label>Date</label>
-        <input type="date" name="date"ngModel>
+        <input type="date" name="date" ngModel>
       </div>
 
       <div class="brd row">
@@ -13,43 +13,47 @@
           <br>
           <div>
             <label class="col-md-3">Member Name</label>
-            <input class="col-md-8" type="text" name="memberName"ngModel>
+            <input class="col-md-8" type="text" name="memberName" ngModel>
           </div>
-          <div>
-            <label class="col-md-3">Current Address</label>
-            <input class="col-md-8" type="text" name="currentAddress"ngModel>
-          </div>
-          <div>
-            <label class="col-md-3">City</label>
-            <input class="col-md-3" type="text" name="mcity"ngModel>
-            <label class="col-md-1">State</label>
-            <input class="col-md-2" type="text" name="mstate"ngModel>
-            <label class="col-md-1" style="margin-left:-8px;">Country</label>
-            <input class="col-md-1" type="text" name="mcountry"ngModel>
-          </div>
-          <div>
-            <label class="col-md-3">Permanent Address</label>
-            <input class="col-md-8" type="text" name="permanantAddress"ngModel>
-          </div>
-          <div>
-            <label class="col-md-3">City</label>
-            <input class="col-md-3" type="text" name="mpcity"ngModel>
-            <label class="col-md-1">State</label>
-            <input class="col-md-2" type="text" name="mpstate"ngModel>
-            <label class="col-md-1" style="margin-left:-8px;">Country</label>
-            <input class="col-md-1" type="text" name="mpcountry"ngModel>
-          </div>
+          <fieldset ngModelGroup="currentAddress">
+            <div>
+              <label class="col-md-3">Current Address</label>
+              <input class="col-md-8" type="text" name="address" ngModel>
+            </div>
+            <div>
+              <label class="col-md-3">City</label>
+              <input class="col-md-3" type="text" name="city" ngModel>
+              <label class="col-md-1">State</label>
+              <input class="col-md-2" type="text" name="state" ngModel>
+              <label class="col-md-1" style="margin-left:-8px;">Country</label>
+              <input class="col-md-1" type="text" name="country" ngModel>
+            </div>
+          </fieldset>
+          <fieldset ngModelGroup="permanentAddress">
+            <div>
+              <label class="col-md-3">Permanent Address</label>
+              <input class="col-md-8" type="text" name="address" ngModel>
+            </div>
+            <div>
+              <label class="col-md-3">City</label>
+              <input class="col-md-3" type="text" name="city" ngModel>
+              <label class="col-md-1">State</label>
+              <input class="col-md-2" type="text" name="state" ngModel>
+              <label class="col-md-1" style="margin-left:-8px;">Country</label>
+              <input class="col-md-1" type="text" name="country" ngModel>
+            </div>
+          </fieldset>
           <div>
             <label class="col-md-3">Mobile No</label>
-            <input class="col-md-3" type="text" name="mobileNo"ngModel>
+            <input class="col-md-3" type="text" name="mobileNo" ngModel>
             <label class="col-md-2">Telephone No</label>
-            <input class="col-md-3" type="text" name="mtelephoneNo"ngModel>
+            <input class="col-md-3" type="text" name="telephoneNo" ngModel>
           </div>
           <div>
             <label class="col-md-3">Aadhar No</label>
-            <input class="col-md-3" type="text" name="maadharNo"ngModel>
+            <input class="col-md-3" type="text" name="aadharNo" ngModel>
             <label class="col-md-2">PAN No</label>
-            <input class="col-md-3" type="text" name="mpanNo"ngModel>
+            <input class="col-md-3" type="text" name="panNo" ngModel>
           </div>
           <br>
         </div>
@@ -60,27 +64,27 @@
           <br>
           <div>
             <label class="col-md-3">Member No</label>
-            <input class="col-md-3" type="text" name="memberNo"ngModel>
+            <input class="col-md-3" type="text" name="memberNo" ngModel>
             <label class="col-md-3">FDO Code</label>
-            <input class="col-md-2" type="text" name="fdoCode"ngModel>
+            <input class="col-md-2" type="text" name="fDOCode" ngModel>
           </div>
           <div>
             <label class="col-md-3">Loan Account No.</label>
-            <input class="col-md-3" type="text" name="mloanAccNo."ngModel>
+            <input class="col-md-3" type="text" name="loanAccountNo" ngModel>
             <label class="col-md-3">Member Active Status</label>
-            <input class="col-md-2" type="text" name="mactiveStatus"ngModel>
+            <input class="col-md-2" type="text" name="memberActiveStatus" ngModel>
           </div>
           <div>
             <label class="col-md-3">Branch Manager Approval</label>
-            <input class="col-md-3" type="text" name="brnchMngrApproval"ngModel>
+            <input class="col-md-3" type="text" name="branchManagerApproval" ngModel>
             <label class="col-md-3">Area Manager Approval</label>
-            <input class="col-md-2" type="text" name="areaMngrApproval"ngModel>
+            <input class="col-md-2" type="text" name="areaManagerApproval" ngModel>
           </div>
           <div>
             <label class="col-md-3">Loan Purpose</label>
-            <input class="col-md-3" type="text" name="loanPurpose"ngModel>
+            <input class="col-md-3" type="text" name="loanPurpose" ngModel>
             <label class="col-md-3">Eligibility</label>
-            <input class="col-md-2" type="text" name="eligibility"ngModel>
+            <input class="col-md-2" type="text" name="eligibility" ngModel>
           </div>
           <br>
         </div>
@@ -88,40 +92,40 @@
       <br>
       <div style="font-size:13px;">
         <label class="col-md-3">FDO Survey Report</label>
-        <input type="text" name="fdoSurveyReport"ngModel class="col-md-8">
+        <input type="text" name="fDOSurveyReport" ngModel class="col-md-8">
       </div>
       <div class="brd row" style="border-bottom:none;">
         <div class="col-md-12">
           <br>
           <div>
             <label class="col-md-3">Loan Application Amount</label>
-            <input class="col-md-3" type="text" name="loanAmount"ngModel>
+            <input class="col-md-3" type="text" name="loanApplicationAmount" ngModel>
             <label class="col-md-3">Loan Tenure</label>
-            <input class="col-md-2" type="text" name="loanTenure"ngModel>
+            <input class="col-md-2" type="text" name="loanTenure" ngModel>
           </div>
           <div>
             <label class="col-md-3">Loan Disbursement</label>
-            <input class="col-md-3" type="text" name="loanDisbursment"ngModel>
+            <input class="col-md-3" type="text" name="loandisbursement" ngModel>
             <label class="col-md-3">EMI Schedule</label>
-            <input class="col-md-2" type="text" name="emiSchedule"ngModel>
+            <input class="col-md-2" type="text" name="emiSchedule1" ngModel>
           </div>
           <div>
             <label class="col-md-3">Rate of Interest</label>
-            <input class="col-md-3" type="text" name="rateofIntrest"ngModel>
+            <input class="col-md-3" type="text" name="rateOfInterest" ngModel>
             <label class="col-md-3">Fixed/Floating Rate</label>
-            <input class="col-md-2" type="text" name="fixedRate"ngModel>
+            <input class="col-md-2" type="text" name="fixedORFloatingRate" ngModel>
           </div>
           <div>
             <label class="col-md-3">Principle Loan Amount</label>
-            <input class="col-md-3" type="text" name="priciplLoanAmount"ngModel>
+            <input class="col-md-3" type="text" name="principleLoanAmount" ngModel>
             <label class="col-md-3">Interest Amount</label>
-            <input class="col-md-2" type="text" name="intrstAmount"ngModel>
+            <input class="col-md-2" type="text" name="interestAmount" ngModel>
           </div>
           <div>
             <label class="col-md-3">Total Outstanding</label>
-            <input class="col-md-3" type="text" name="outstanding"ngModel>
+            <input class="col-md-3" type="text" name="totalOutstanding" ngModel>
             <label class="col-md-3">EMI Schedule</label>
-            <input class="col-md-2" type="text" name="emiScheduled"ngModel>
+            <input class="col-md-2" type="text" name="emiSchedule2" ngModel>
           </div>
           <br>
         </div>
@@ -131,27 +135,27 @@
           <br>
           <div>
             <label class="col-md-3">Asset Mortgage</label>
-            <input class="col-md-3" type="text" name="asstMortage"ngModel>
+            <input class="col-md-3" type="text" name="assetMortgage" ngModel>
             <label class="col-md-3">Asset Description</label>
-            <input class="col-md-2" type="text" name="asstDescription"ngModel>
+            <input class="col-md-2" type="text" name="assetDescription" ngModel>
           </div>
           <div>
             <label class="col-md-3">Asset Market Value</label>
-            <input class="col-md-3" type="text" name="asstMarktValue"ngModel>
+            <input class="col-md-3" type="text" name="assetMarketValue" ngModel>
             <label class="col-md-3">Asset Mortgage with Other</label>
-            <input class="col-md-1" type="text" name="asstmortge"ngModel>
+            <input class="col-md-1" type="text" name="assetMortgagewithOther" ngModel>
           </div>
           <div>
             <label class="col-md-3">Asset Documents</label>
-            <input class="col-md-3" type="text" name="assetDocumnt"ngModel>
+            <input class="col-md-3" type="text" name="assetDocuments" ngModel>
             <label class="col-md-3">Insurance Attached</label>
-            <input class="col-md-2" type="text" name="insuranceAttch"ngModel>
+            <input class="col-md-2" type="text" name="insuranceAttached" ngModel>
           </div>
           <div>
             <label class="col-md-3">Insurance Company</label>
-            <input class="col-md-3" type="text" name="insuranceCompany"ngModel>
+            <input class="col-md-3" type="text" name="insuranceCompany" ngModel>
             <label class="col-md-3">Premium Amount</label>
-            <input class="col-md-2" type="text" name="premiumAmount"ngModel>
+            <input class="col-md-2" type="text" name="premiumAmount" ngModel>
           </div>
           <br>
         </div>

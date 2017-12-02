@@ -1,5 +1,6 @@
 import { NgForm } from '@angular/forms/src/directives/ng_form';
 import { Component, OnInit } from '@angular/core';
+import { SigninService } from '../All Services/signin.service';
 
 @Component({
   selector: 'app-mem-extrnl-fund',
@@ -8,11 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MemExtrnlFundComponent implements OnInit {
 
-  constructor() { }
+  constructor(private signSer: SigninService) { }
 
   ngOnInit() {
   }
   extFund(extFundForm: NgForm) {
-    console.log(extFundForm.value);
+    this.signSer.ExFund(extFundForm.value).subscribe(
+      data => {
+     console.log(data)
+      });
   }
 }

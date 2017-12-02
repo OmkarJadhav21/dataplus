@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SigninService } from '../All Services/signin.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-member-registr',
@@ -7,11 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MemberRegistrComponent implements OnInit {
 
-  constructor() { }
+  constructor(private signSer: SigninService) { }
 
   ngOnInit() {
   }
-  memberRegistration(memRegisterForm) {
-    console.log(memRegisterForm.value);
+  memberRegistration(memRegisterForm:NgForm) {
+    this.signSer.memberReg(memRegisterForm.value).subscribe(
+      data => {
+     console.log(data)
+      });
   }
 }

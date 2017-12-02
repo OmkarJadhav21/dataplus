@@ -17,8 +17,22 @@ export class SigninComponent implements OnInit {
   signin(signinForm: NgForm) {
     this.signSer.signInSer(signinForm.value).subscribe(
       data => {
-      this.GoldData=data,
-     console.log(this.GoldData);
+      this.GoldData=data
+    //  console.log(this.GoldData);
       });
   }
+  // data=[{
+  //   "userId": 1,
+  //   "id": 1,
+  //   "title": ["asd","asdsad","as"]
+  //                 ,
+  //   "completed": false
+  // },
+  // {
+  //   "userId": 2,
+  //   "id": 5,
+  //   "title": "deasdaec",
+  //   "completed": false
+  // }
+// ]
 }

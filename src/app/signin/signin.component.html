@@ -12,33 +12,41 @@
                 <div class="col-md-10">
                     <br>
                     <div>
+                        <!-- <select>
+                            <option *ngFor="let data of data" [value]="data.title">{{data.title[]}}</option>
+                        </select> -->
                         <label class="col-md-3">Employee Name</label>
                         <input class="col-md-8" type="text" name="employeeName" ngModel>
                     </div>
-                    <div>
-                        <label class="col-md-3">Current Address</label>
-                        <input class="col-md-8" type="text" name="currentAddress" ngModel>
-                    </div>
-                    <div>
-                        <label class="col-md-3">City</label>
-                        <input class="col-md-3" type="text" name="city" ngModel>
-                        <label class="col-md-1">State</label>
-                        <input class="col-md-2" type="text" name="state" ngModel>
-                        <label class="col-md-1" style="margin-left:-8px;">Country</label>
-                        <input class="col-md-1" type="text" name="country" ngModel>
-                    </div>
-                    <div>
-                        <label class="col-md-3">Permanent Address</label>
-                        <input class="col-md-8" type="text" name="permanentAddress" ngModel>
-                    </div>
-                    <div>
-                        <label class="col-md-3">City</label>
-                        <input class="col-md-3" type="text" name="city" ngModel>
-                        <label class="col-md-1">State</label>
-                        <input class="col-md-2" type="text" name="state" ngModel>
-                        <label class="col-md-1" style="margin-left:-8px;">Country</label>
-                        <input class="col-md-1" type="text" name="country" ngModel>
-                    </div>
+                    <fieldset ngModelGroup="currentAddress">
+                        <div>
+                            <label class="col-md-3">Current Address</label>
+                            <input class="col-md-8" type="text" name="address" ngModel>
+                        </div>
+                        <div>
+                            <label class="col-md-3">City</label>
+                            <input class="col-md-3" type="text" name="city" ngModel>
+                            <label class="col-md-1">State</label>
+                            <input class="col-md-2" type="text" name="state" ngModel>
+                            <label class="col-md-1" style="margin-left:-8px;">Country</label>
+                            <input class="col-md-1" type="text" name="country" ngModel>
+                        </div>
+                    </fieldset>
+                    <fieldset ngModelGroup="permanentAddress">
+                        <div>
+                            <label class="col-md-3">Permanent Address</label>
+                            <input class="col-md-8" type="text" name="address" ngModel>
+                        </div>
+                        <div>
+                            <label class="col-md-3">City</label>
+                            <input class="col-md-3" type="text" name="city" ngModel>
+                            <label class="col-md-1">State</label>
+                            <input class="col-md-2" type="text" name="state" ngModel>
+                            <label class="col-md-1" style="margin-left:-8px;">Country</label>
+                            <input class="col-md-1" type="text" name="country" ngModel>
+                        </div>
+                    </fieldset>
+
                     <div>
                         <label class="col-md-3">Employee Code</label>
                         <input class="col-md-3" type="text" name="employeeCode" ngModel>

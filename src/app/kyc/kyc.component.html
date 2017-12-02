@@ -15,9 +15,10 @@
             <label class="col-md-3">Member Name</label>
             <input class="col-md-8" type="text" name="memberName" ngModel>
           </div>
+          <fieldset ngModelGroup="currentAddress">            
           <div>
             <label class="col-md-3">Current Address</label>
-            <input class="col-md-8" type="text" name="cAddress" ngModel>
+            <input class="col-md-8" type="text" name="address" ngModel>
           </div>
           <div>
             <label class="col-md-3">City</label>
@@ -27,23 +28,26 @@
             <label class="col-md-1" style="margin-left:-8px;">Country</label>
             <input class="col-md-1" type="text" name="country" ngModel>
           </div>
+          </fieldset>
+          <fieldset ngModelGroup="permanentAddress">            
           <div>
             <label class="col-md-3">Permanent Address</label>
-            <input class="col-md-8" type="text" name="pAddress" ngModel>
+            <input class="col-md-8" type="text" name="city" ngModel>
           </div>
           <div>
             <label class="col-md-3">City</label>
             <input class="col-md-3" type="text" name="pcity" ngModel>
             <label class="col-md-1">State</label>
-            <input class="col-md-2" type="text" name="pstate" ngModel>
+            <input class="col-md-2" type="text" name="state" ngModel>
             <label class="col-md-1" style="margin-left:-8px;">Country</label>
-            <input class="col-md-1" type="text" name="pcountry" ngModel>
+            <input class="col-md-1" type="text" name="country" ngModel>
           </div>
+          </fieldset>
           <div>
             <label class="col-md-3">Mobile No</label>
             <input class="col-md-3" type="text" name="mobileNo" ngModel>
             <label class="col-md-2">Voter ID</label>
-            <input class="col-md-3" type="text" name="voterid" ngModel>
+            <input class="col-md-3" type="text" name="voterNo" ngModel>
           </div>
           <div>
             <label class="col-md-3">Telephone No</label>
@@ -78,13 +82,13 @@
           </div>
           <div>
             <label class="col-md-3">Balence Amount</label>
-            <input class="col-md-3" type="text" name="balenceAmount" ngModel>
+            <input class="col-md-3" type="text" name="balanceAmount" ngModel>
             <label class="col-md-3">Center</label>
             <input class="col-md-2" type="text" name="center" ngModel>
           </div>
           <div>
             <label class="col-md-3">FDO</label>
-            <input class="col-md-3" type="text" name="fdo" ngModel>
+            <input class="col-md-3" type="text" name="fDO" ngModel>
             <label class="col-md-3">EMI Schedule</label>
             <input class="col-md-2" type="text" name="emiSchedule" ngModel>
           </div>
@@ -101,7 +105,7 @@
           <br>
           <div>
             <label class="col-md-3">Account Holder Name</label>
-            <input class="col-md-3" type="text" name="holderName" ngModel>
+            <input class="col-md-3" type="text" name="accountHolderName" ngModel>
             <label class="col-md-3">Branch</label>
             <input class="col-md-2" type="text" name="branch" ngModel>
           </div>
@@ -109,13 +113,13 @@
             <label class="col-md-3">Bank Name</label>
             <input class="col-md-3" type="text" name="bankName" ngModel>
             <label class="col-md-3">IFSC CODE</label>
-            <input class="col-md-2" type="text" name="ifsc" ngModel>
+            <input class="col-md-2" type="text" name="iFSCCODE" ngModel>
           </div>
           <div>
             <label class="col-md-3">Saving A/C No.</label>
-            <input class="col-md-3" type="text" name="accountNo" ngModel>
+            <input class="col-md-3" type="text" name="savingAccNo" ngModel>
             <label class="col-md-3">City</label>
-            <input class="col-md-2" type="text" name="bcity" ngModel>
+            <input class="col-md-2" type="text" name="bankCity" ngModel>
           </div>
           <br>
         </div>
@@ -128,9 +132,9 @@
           <br>
           <div>
             <label class="col-md-3">Bank Name</label>
-            <input class="col-md-3" type="text" name="oBankName" ngModel>
+            <input class="col-md-3" type="text" name="bankName" ngModel>
             <label class="col-md-3">Loan A/c No.</label>
-            <input class="col-md-2" type="text" name="loanNo" ngModel>
+            <input class="col-md-2" type="text" name="loanAccNo" ngModel>
           </div>
           <div>
             <label class="col-md-3">Loan Value</label>

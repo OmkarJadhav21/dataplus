@@ -1,3 +1,4 @@
+import { SigninService } from './../All Services/signin.service';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
@@ -8,11 +9,14 @@ import { NgForm } from '@angular/forms';
 })
 export class KycComponent implements OnInit {
 
-  constructor() { }
+  constructor(private signSer: SigninService) { }
 
   ngOnInit() {
   }
   kyc(kycForm: NgForm) {
-    console.log(kycForm.value);
+    this.signSer.kyc(kycForm.value).subscribe(
+      data => {
+     console.log(data)
+      });
   }
 }

@@ -1,5 +1,6 @@
 import { NgForm } from '@angular/forms/src/directives/ng_form';
 import { Component, OnInit } from '@angular/core';
+import { SigninService } from '../All Services/signin.service';
 
 @Component({
   selector: 'app-mem-loan-acc',
@@ -8,11 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MemLoanAccComponent implements OnInit {
 
-  constructor() { }
+  constructor(private signSer: SigninService) { }
 
   ngOnInit() {
   }
   loanAccount(loanForm: NgForm) {
-    console.log(loanForm.value);
+    this.signSer.memberLoan(loanForm.value).subscribe(
+      data => {
+     console.log(data)
+      });
   }
 }

@@ -1,5 +1,6 @@
 import { NgForm } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
+import { SigninService } from '../All Services/signin.service';
 
 @Component({
   selector: 'app-mem-demand-sheet',
@@ -8,11 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MemDemandSheetComponent implements OnInit {
 
-  constructor() { }
+  constructor(private signSer: SigninService) { }
 
   ngOnInit() {
   }
   demandsheet(demandForm: NgForm) {
-    console.log(demandForm.value);
+    this.signSer.demandSheet(demandForm.value).subscribe(
+      data => {
+     console.log(data)
+      });
   }
 }
