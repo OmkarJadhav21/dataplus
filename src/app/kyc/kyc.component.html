@@ -158,3 +158,11 @@
     </form>
   </div>
 </div>
+
+<div class="kyc" *ngIf="msg">
+<div class="card" >
+    <div class="card-body" style="text-align:center;">
+        <div class="card-title">{{failmsg}}</div>
+        <input type="button" class="btn btn-warning" value="OK" (click)="msg=!msg" >
+    </div>
+</div></div>

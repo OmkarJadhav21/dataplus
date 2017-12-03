@@ -21,3 +21,13 @@
     padding-bottom: 1%;
     margin-left: 0.9px
 }
+.card{
+    z-index: 15%;
+    top: 35%;
+    left: 37%;;
+    width: 30%;
+    height: 25%;
+    border-color: yellowgreen;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+}

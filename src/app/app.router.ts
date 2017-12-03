@@ -10,6 +10,7 @@ import { UserAuthComponent } from './user-auth/user-auth.component';
 
 
 const routes:Routes=[
+    { path:'',component:LoginComponent},    
     { path:'login',component:LoginComponent},
     { path:'kyc',component:KycComponent},
     { path:'demandSheet',component:MemDemandSheetComponent},

@@ -15,3 +15,17 @@
     height: 140px;
     width: 120px;
 }
+/* .msg{
+   height: 200px;
+   width: 300px;
+} */
+.card{
+    z-index: 15%;
+    top: 35%;
+    left: 37%;;
+    width: 30%;
+    height: 25%;
+    border-color: yellowgreen;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+}

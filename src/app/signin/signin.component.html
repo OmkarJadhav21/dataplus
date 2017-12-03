@@ -7,14 +7,27 @@
                 <label>Date</label>
                 <input type="date" name="date" ngModel>
             </div>
-
             <div class="brd row">
                 <div class="col-md-10">
                     <br>
-                    <div>
-                        <!-- <select>
-                            <option *ngFor="let data of data" [value]="data.title">{{data.title[]}}</option>
+                    <div >
+                        
+                        <!-- <form #frm="ngForm" (ngSubmit)="myfun(frm,name.value)">
+                            <input type="submit" class="btn btn-primary" value="ok">
+                              <select (change)="countryFind($event.target.value)" #name>
+                            <option *ngFor="let dropdata of dropdt" [value]="dropdata.id">{{dropdata.countryName}}</option>
+                        </select>
+                    </form>
+                    <br>
+                    <br>
+                        <select (change)="cityFind($event.target.value)">
+                            <option *ngFor="let dropdata1 of dropdt1" [value]="dropdata1.id">{{dropdata1.stateName}}</option>
+                        </select>
+                        <select>
+                            <option *ngFor="let dropdata2 of dropdt2" [value]="dropdt2.cityName">{{dropdata2.cityName}}</option>
                         </select> -->
+
+
                         <label class="col-md-3">Employee Name</label>
                         <input class="col-md-8" type="text" name="employeeName" ngModel>
                     </div>
@@ -162,5 +175,13 @@
                 <input type="submit" class="btn btn-primary" value="Submit">
             </div>
         </form>
+    </div>
+</div>
+
+
+<div class="card" *ngIf="msg" >
+    <div class="card-body" style="text-align:center;">
+        <div class="card-title">{{failmsg}}</div>
+        <input type="button" class="btn btn-warning" value="OK" (click)="msg=!msg" >
     </div>
 </div>

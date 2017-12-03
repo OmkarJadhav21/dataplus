@@ -8,31 +8,58 @@ import { SigninService } from '../All Services/signin.service';
   templateUrl: './signin.component.html',
   styleUrls: ['./signin.component.css']
 })
-export class SigninComponent implements OnInit {
 
+export class SigninComponent implements OnInit {
+  dropdt = [];
+  dropdt1 = [];
+  dropdt2 = [];
+  msg = false;
+  failmsg;
   constructor(private signSer: SigninService) { }
-  GoldData:any;
+  GoldData: any;
   ngOnInit() {
+    this.signSer.drop().subscribe(data => {
+      this.dropdt = data.json();
+      // console.log("myasdsdasd",this.dropdt);
+    });
   }
+
+  onChange(abc) {
+    console.log(abc);
+  }
+
   signin(signinForm: NgForm) {
+    // console.log(signinForm);
+
     this.signSer.signInSer(signinForm.value).subscribe(
-      data => {
-      this.GoldData=data
-    //  console.log(this.GoldData);
-      });
+      res => {
+        if (res['ok'] === true) {
+         this.msg=true
+         this.failmsg="Data Saved Successfully !!!" 
+        //  console.log(this.msg)
+        }
+      },
+      err=>{          
+        this.msg=true
+        this.failmsg="Something went wrong" 
+      }
+    );
   }
-  // data=[{
-  //   "userId": 1,
-  //   "id": 1,
-  //   "title": ["asd","asdsad","as"]
-  //                 ,
-  //   "completed": false
-  // },
-  // {
-  //   "userId": 2,
-  //   "id": 5,
-  //   "title": "deasdaec",
-  //   "completed": false
-  // }
-// ]
+
+  countryFind(cid) {
+    // console.log(cid);
+    this.signSer.drop1(cid.id).subscribe(data => {
+      this.dropdt1 = data.json();
+    })
+  }
+  cityFind(stateId) {
+    this.signSer.drop2(stateId).subscribe(data => {
+      this.dropdt2 = data.json();
+    })
+  }
+  myfun(frm: any, name: any) {
+    console.log(frm.value);
+
+    console.log(name);
+  }
 }

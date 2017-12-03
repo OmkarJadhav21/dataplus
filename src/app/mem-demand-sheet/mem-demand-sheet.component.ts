@@ -8,15 +8,24 @@ import { SigninService } from '../All Services/signin.service';
   styleUrls: ['./mem-demand-sheet.component.css']
 })
 export class MemDemandSheetComponent implements OnInit {
-
+  msg = false;
+  failmsg;
   constructor(private signSer: SigninService) { }
 
   ngOnInit() {
   }
   demandsheet(demandForm: NgForm) {
     this.signSer.demandSheet(demandForm.value).subscribe(
-      data => {
-     console.log(data)
+      res => {
+        if (res['ok'] === true) {
+         this.msg=true
+         this.failmsg="Data Saved Successfully !!!" 
+         //  console.log(this.msg)
+        }
+      },
+      err=>{          
+        this.msg=true
+        this.failmsg="Something went wrong" 
       });
   }
 }

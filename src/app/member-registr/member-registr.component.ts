@@ -8,15 +8,24 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./member-registr.component.css']
 })
 export class MemberRegistrComponent implements OnInit {
-
+  msg = false;
+  failmsg;
   constructor(private signSer: SigninService) { }
 
   ngOnInit() {
   }
   memberRegistration(memRegisterForm:NgForm) {
     this.signSer.memberReg(memRegisterForm.value).subscribe(
-      data => {
-     console.log(data)
+      res => {
+        if (res['ok'] === true) {
+         this.msg=true
+         this.failmsg="Data Saved Successfully !!!" 
+         //  console.log(this.msg)
+        }
+      },
+      err=>{          
+        this.msg=true
+        this.failmsg="Something went wrong" 
       });
   }
 }
