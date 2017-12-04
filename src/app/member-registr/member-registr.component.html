@@ -2,7 +2,7 @@
   <h1 style="text-align:center">MEMBER REGISTRATION</h1>
   <div class="scrsize">
     <br>
-    <form #memRegisterForm="ngForm" (ngSubmit)="memberRegistration(memRegisterForm)">
+    <form #memRegisterForm="ngForm" (ngSubmit)="memberRegistration(memRegisterForm);memRegisterForm.resetForm()">
       <div style="text-align:right">
         <label>Date</label>
         <input type="date"name="date"ngModel>
@@ -22,12 +22,31 @@
             <input class="col-md-8" type="text" name="address" ngModel>
           </div>
           <div>
-            <label class="col-md-3">City</label>
-            <input class="col-md-3" type="text" name="city" ngModel>
-            <label class="col-md-1">State</label>
-            <input class="col-md-2" type="text" name="state" ngModel>
-            <label class="col-md-1" style="margin-left:-8px;">Country</label>
-            <input class="col-md-1" type="text" name="country" ngModel>
+              <label class="col-md-3">City</label>
+              <select class="col-md-3" name="city" ngModel >   
+                  <option selected value="Pune">Pune</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Nashik">Nashik</option>
+                  <option value="A.Nager">A.Nager</option>
+                  <option value="Nagpur">Nagpur</option>
+                  <option value="Aurangabad">Aurangabad</option>
+                  <option value="Kolhapur">Kolhapur</option>
+                  <option value="Satara">Satara</option>
+              </select>
+              <label class="col-md-1">State</label>
+              <select class="col-md-2" name="state" ngModel>   
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Gujrat">Gujrat</option>
+                  <option value="Goa">Goa</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Keral">Keral</option>
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+              </select>
+              <label class="col-md-1" style="margin-left:-8px;">Country</label>
+              <select class="col-md-1" name="country" value="India"ngModel>   
+                  <option value="India"selected>India</option>
+              </select>
           </div>
           </fieldset>
           <fieldset ngModelGroup="permanentAddress">            
@@ -36,12 +55,31 @@
             <input class="col-md-8" type="text" name="address" ngModel>
           </div>
           <div>
-            <label class="col-md-3">City</label>
-            <input class="col-md-3" type="text" name="city" ngModel>
-            <label class="col-md-1">State</label>
-            <input class="col-md-2" type="text" name="state" ngModel>
-            <label class="col-md-1" style="margin-left:-8px;">Country</label>
-            <input class="col-md-1" type="text" name="country" ngModel>
+              <label class="col-md-3">City</label>
+              <select class="col-md-3" name="city" ngModel >   
+                  <option selected value="Pune">Pune</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Nashik">Nashik</option>
+                  <option value="A.Nager">A.Nager</option>
+                  <option value="Nagpur">Nagpur</option>
+                  <option value="Aurangabad">Aurangabad</option>
+                  <option value="Kolhapur">Kolhapur</option>
+                  <option value="Satara">Satara</option>
+              </select>
+              <label class="col-md-1">State</label>
+              <select class="col-md-2" name="state" ngModel>   
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Gujrat">Gujrat</option>
+                  <option value="Goa">Goa</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Keral">Keral</option>
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+              </select>
+              <label class="col-md-1" style="margin-left:-8px;">Country</label>
+              <select class="col-md-1" name="country" value="India"ngModel>   
+                  <option value="India"selected>India</option>
+              </select>
           </div>
           </fieldset>
           <div>

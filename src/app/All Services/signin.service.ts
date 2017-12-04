@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 @Injectable()
 export class SigninService {
   private em: EventEmitter<any>
-  linkhit = "http://123.252.131.54";
+  linkhit = "http://localhost:7575";
   constructor(private router: Router,
     private http: Http,
 
