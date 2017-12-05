@@ -18,6 +18,12 @@
   opacity: 1;
   color: blue;
 }
+.place{
+    font-size: 75%;
+    transform: translate3d(0, -100%, 0);
+    opacity: 1;
+    color: blue;
+}
 .form-control:focus{
   border-color: transparent;
   border-radius: 0px;

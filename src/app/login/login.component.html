@@ -12,12 +12,12 @@
         <div class="col-md-6 mx-auto">
           <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
             <div class="form-group">
-              <input type="text" name="EmployeeCode" class="form-control" required ngModel>
-              <label class="form-control-placeholder">Employee Code</label>
+              <input type="text" name="EmployeeCode" class="form-control" (click)="placeholderF('u')"required ngModel>
+              <label [ngClass]="{'place':fun,'form-control-placeholder':true}" (click)="placeholderFun('u')">Employee Code</label>
             </div>
             <div class="form-group">
-              <input type="password" name="Password" class="form-control" required ngModel>
-              <label class="form-control-placeholder">Password</label>
+              <input type="password" name="Password" class="form-control" (click)="placeholderF('p')" required ngModel>
+              <label [ngClass]="{'place':funp,'form-control-placeholder':true}" (click)="placeholderFun('p')">Password</label>
             </div>
             <div style="text-align:center">
               <button type="submit" class="btn btn-primary">LOGIN</button>

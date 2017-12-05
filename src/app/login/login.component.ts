@@ -10,7 +10,8 @@ import { SigninService } from '../All Services/signin.service';
 export class LoginComponent implements OnInit {
   loginSuccess;
   user;
-
+  fun=false;
+  funp=false;
 
   constructor(private lgnSer: SigninService) { }
   ngOnInit() {
@@ -21,5 +22,24 @@ export class LoginComponent implements OnInit {
   }
   login(loginForm: NgForm) {
     this.lgnSer.loginSer(loginForm.value)
+  }
+
+  placeholderFun(z:string){
+    if(z=="u"){
+      this.fun=true
+      this.funp=false;
+    }else if(z=="p"){
+      this.funp=true
+      this.fun=false
+    }
+  }
+  placeholderF(z:string){
+    if(z=="u"){
+      this.fun=true
+      this.funp=false;
+    }else if(z=="p"){
+      this.funp=true
+      this.fun=false
+    }
   }
 }
